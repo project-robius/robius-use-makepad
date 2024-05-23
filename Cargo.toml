@@ -1,0 +1,22 @@
+[package]
+name = "robius-use-makepad"
+version = "0.1.0"
+edition = "2021"
+authors = [
+    "Kevin Boos <kevinaboos@gmail.com>",
+    "Project Robius Maintainers",
+]
+description = "Auto-configures all `robius-*` crates in your dependency tree to work with Makepad"
+documentation = "https://docs.rs/robius-use-makepad"
+homepage = "https://robius.rs/"
+keywords = ["robius", "makepad", "environment", "java", "jni"]
+categories = ["gui", "os"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/project-robius/robius-use-makepad"
+
+[dependencies]
+robius-android-env = { version = "0.1.0", optional = true }
+
+[features]
+default = ["robius-android-env?/makepad"]
