@@ -1,6 +1,6 @@
 [package]
 name = "robius-use-makepad"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = [
     "Kevin Boos <kevinaboos@gmail.com>",
@@ -16,7 +16,7 @@ readme = "README.md"
 repository = "https://github.com/project-robius/robius-use-makepad"
 
 [target.'cfg(target_os = "android")'.dependencies]
-robius-android-env = { version = "0.1.0", optional = true }
+robius-android-env = { version = "0.2.0", optional = true }
 
 [features]
 default = ["robius-android-env/makepad"]
